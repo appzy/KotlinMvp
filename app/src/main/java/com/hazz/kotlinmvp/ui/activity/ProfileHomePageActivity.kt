@@ -1,6 +1,7 @@
 package com.hazz.kotlinmvp.ui.activity
 
 import android.annotation.SuppressLint
+import android.graphics.BitmapFactory
 import android.support.v4.content.ContextCompat
 import android.support.v4.widget.NestedScrollView
 import android.webkit.WebView
@@ -25,6 +26,12 @@ class ProfileHomePageActivity : BaseActivity() {
 
     private var mOffset = 0
     private var mScrollY = 0
+    private var mRawBitmap: BitmapFactory? = null
+
+    private var 𓃟 ="初级"
+    private var 𓃟𓃟="中级"
+    private var 𓃟𓃟𓃟="高级"
+    private var 𓃟𓃟𓃟𓃟="专家"
 
     override fun layoutId(): Int = R.layout.activity_profile_homepage
 
@@ -73,7 +80,7 @@ class ProfileHomePageActivity : BaseActivity() {
         toolbar.setNavigationOnClickListener { finish() }
 
 
-        refreshLayout.setOnRefreshListener {  mWebView.loadUrl("https://xuhaoblog.com/KotlinMvp") }
+        refreshLayout.setOnRefreshListener {  mWebView.loadUrl("https://appzy.vip") }
         refreshLayout.autoRefresh()
 
         mWebView.settings.javaScriptEnabled = true

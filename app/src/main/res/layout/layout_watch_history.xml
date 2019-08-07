@@ -42,6 +42,8 @@
             android:text="观看记录"
             android:textColor="@color/color_item_title"
             android:textSize="18sp"
+            android:singleLine="true"
+            android:ellipsize="end"
             android:textStyle="bold" />
     </android.support.v7.widget.Toolbar>
 
