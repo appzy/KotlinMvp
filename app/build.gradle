@@ -9,15 +9,15 @@ apply plugin: 'kotlin-kapt'  //kapt3插件
 android {
     signingConfigs {
         config {
-            keyAlias 'ktmp'
-            keyPassword 'ktmp123456'
-            storeFile file('../ktmp.jks')
-            storePassword 'ktmp123456'
+            keyAlias 'appzy'
+            keyPassword 'appzykotlinmvp'
+            storeFile file('../appzy')
+            storePassword 'appzykotlinmvp'
         }
     }
     compileSdkVersion rootProject.ext.android.compileSdkVersion
     defaultConfig {
-        applicationId "com.hazz.kotlinmvp"
+        applicationId "com.appzy.kotlinmvp"
         minSdkVersion rootProject.ext.android.minSdkVersion
         targetSdkVersion rootProject.ext.android.targetSdkVersion
         versionCode rootProject.ext.android.versionCode
@@ -68,7 +68,11 @@ android {
     productFlavors {
 
     }
-
+    android {
+        sourceSets {
+            main.jniLibs.srcDirs = ['libs']
+        }
+    }
 
     dexOptions {
         jumboMode true
@@ -131,7 +135,8 @@ dependencies {
     debugImplementation 'com.squareup.leakcanary:leakcanary-android:1.5.4'
     releaseImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.4'
     //腾讯 bugly
-    implementation 'com.tencent.bugly:crashreport:2.6.6.1'
+    implementation 'com.tencent.bugly:crashreport:latest.release'
+    implementation 'com.tencent.bugly:nativecrashreport:latest.release'
     //运行时权限
     implementation'pub.devrel:easypermissions:1.2.0'
 
