@@ -52,7 +52,6 @@ Kotlin 团队为 Android 开发提供了一套超越标准语言功能的工具�
 <img src="https://github-1253441343.cos.ap-chengdu.myqcloud.com/WX20190307-154811%402x.png" width = "250" height = "250" alt="图片名称" align=center />
 
 
-
 ## 技术要点
 主要使用的第三方开源框架有：
 
@@ -113,6 +112,7 @@ Kotlin 团队为 Android 开发提供了一套超越标准语言功能的工具�
 
 ```
 Copyright 2017 Xiho
+Copyright 2022 appzy
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
