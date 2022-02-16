@@ -34,10 +34,6 @@ Kotlin 团队为 Android 开发提供了一套超越标准语言功能的工具�
 
 ## 项目截图
 
-- 截图
-
-![](http://oyp2zrwnm.bkt.clouddn.com/pt2017_12_09_10_27_10.jpg)
-
 - gif
 
    <img src="/screenshot/kotlin-mvp-1.gif" style="width: 30%;">
